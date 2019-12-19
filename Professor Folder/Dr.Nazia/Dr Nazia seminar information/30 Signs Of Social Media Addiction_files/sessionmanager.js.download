@@ -1,0 +1,1 @@
+  var _JSURL="https://login.yahoosmallbusiness.com/gdpr.js?.done=.smallbusiness.yahoo.com"; function HAULJS(n,t){var e=n.length;function o(n){var o=document.createElement("script");o.setAttribute("src",n),o.onload=function(){--e<1&&t()},document.head.appendChild(o)}for(var a in n)o(n[a])}HAULJS([_JSURL],function(){});

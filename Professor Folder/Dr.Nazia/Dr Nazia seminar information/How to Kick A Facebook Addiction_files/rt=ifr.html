@@ -1,0 +1,25 @@
+
+<!-- saved from url=(0062)https://bcp.crwdcntrl.net/5/c=10692/rand=578117516/pv=y/rt=ifr -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-color:transparent; width: 100%; text-align: center;">
+<div><script>
+function processTargusData(json)
+{
+   if (json != null) {
+       if (json.targus != null) {
+            u = "";
+            v = "map";
+            if (json.targus.sk != null && json.targus.sk != "") {
+                u += "/tp=TARG/tpid=" + json.targus.sk;
+            }
+            if (u != "") {
+              var img = new Image();
+              img.src = "https://sync.crwdcntrl.net/" + v + "/c=368" + u;
+              document.body.appendChild(img);
+            }
+        }
+   }
+}
+</script>
+<script src="./g.json"></script><img src="./token" height="1" width="1"><img src="./getuid" height="1" width="1"><img src="./cms" height="1" width="1"><img src="./utsync.ashx" width="1" height="1"><img src="./image.sbxx" width="1" height="1"></div><img src="./tpid=164570703193000292319">
+
+</body></html>

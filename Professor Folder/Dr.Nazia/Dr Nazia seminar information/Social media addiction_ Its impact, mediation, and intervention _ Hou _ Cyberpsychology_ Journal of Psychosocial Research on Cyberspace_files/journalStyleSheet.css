@@ -1,0 +1,961 @@
+/**
+ * journals.muni.cz theme style
+ *
+ * Copyright (c) 2003-2011 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ *
+ * $Id$
+ */
+
+body {
+    background-color: #c0c0c0; 
+    background-image: url("https://journals.muni.cz/public/journals/67/design/background.jpg");
+    color: #000000;
+    text-align: center;
+    font-size : 13px;
+    margin: 0 auto;
+    font-family: 'Open Sans', "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif ;
+}
+
+#body {
+    width: 100%;
+}
+#container {
+    width: 830px !important;
+}
+
+ul.menu {
+    display: inline-flex;
+    flex-flow: row;
+    margin: 0 auto;
+}
+
+#navbar #home{
+    order: 1;
+}
+#navbar #about {
+    order: 2;
+}
+
+#navbar #archives {
+    order: 3;
+}
+
+#navbar #search {
+    order: 4;
+}
+
+#navbar #navItem-0 {
+    order: 4;
+}
+
+#navbar #navItem-1 {
+    order: 5;
+}
+#navbar #navItem-2 {
+    order: 6;
+}
+
+#navbar #userHome, #navbar #login {
+    order: 7;
+}
+
+
+
+ul.menu a{
+    outline:none;
+    font-weight: bold;
+    background: none;
+}
+.menu a:link {
+    color: #fff;	
+}
+
+.menu a:active {
+    color: #fff;
+}
+
+.menu a:visited {
+    color: #fff;
+}
+
+.menu a:hover {
+    color: #E3BD2C;
+}
+
+.menu a.selected {
+    color: #E3BD2C;
+}
+.tocArticle a:hover {
+    color: #E3BD2C;
+}
+
+ul.menu #register {
+    display: none;
+}
+a.header_link{
+    color: #fff;
+}
+
+.right_header_logo {
+  margin-top: 10px;
+}
+
+.left_header_logo {
+  margin-top: -20px;
+  height: 95px;
+  width: 124px;
+}
+
+a {
+    text-decoration: none; 
+    outline:none;
+}
+
+a:link {
+    color: #3e5ba1;	
+}
+
+a:active {
+    color: #3e5ba1;
+}
+
+a:visited {
+    color: #3e5ba1;
+}
+
+a:hover {
+    color: #c83931;
+    background: none;
+}
+
+a img{
+    outline: none;
+}
+
+.mc-field-group {
+    margin-bottom: 5px;
+}
+
+.mc-field-group label.newsletter{
+    display: inline-block;
+    width: 30%;
+    float: left;
+}
+.mc-field-group .required {
+    background-color: #fef4e3;
+}
+.indicates-required {
+    margin-bottom: 15px;
+    padding: 3px;
+    background-color: #fef4e3;
+}
+
+input.textField, select.selectMenu, textarea.textArea, input.uploadField {
+
+    font-family: 'Open Sans', "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    padding: 4px 5px 5px 0; 
+    margin: 0px 0 5px ; 
+    background: #fff; 
+    font-size: 1.1em; 
+    color: #616265; 
+    border: 0px;
+    min-width: 60px;
+
+    /*zaoblenďż˝ stďż˝novanďż˝ inputy*/
+    -webkit-box-shadow: 0px 0px 4px #aaa;
+    -moz-box-shadow: 0px 0px 4px #aaa; 
+    box-shadow: 0px 0px 4px #aaa;
+
+    -moz-border-radius: 3px; 
+    border-radius: 3px;	
+    outline: none;
+}
+
+input.defaultButton {
+    padding: 4px; 
+    margin: 4px 0 10px 0; 
+    min-width: 100px;
+    background: #143882; 
+    font-size: 1.1em; 
+    color: #e6e6e6; 
+    border: 0px;
+
+    -webkit-box-shadow: 0px 0px 4px #aaa;
+    -moz-box-shadow: 0px 0px 4px #aaa; 
+    box-shadow: 0px 0px 4px #aaa;
+    -webkit-transition: background 0.3s linear;
+    -webkit-border-radius: 4px;
+
+    -moz-border-radius: 3px; 
+    border-radius: 3px;	
+}
+
+input.defaultButton:hover{
+    background: #e6e6e6;
+    color: #003366;
+    cursor:  pointer; 
+}
+
+input.defaultButton:active{
+    background: #e6e6e6;
+    color: #003366;
+    cursor:  pointer; 
+}
+
+input.button {
+    min-width: 130px;
+    padding: 2px; 
+    margin: 4px 0 10px 0; 
+    min-width: 100px;
+    background: #fff; 
+    font-size: 1.1em; 
+    color: #616265; 
+    border: 0px;
+
+    -webkit-box-shadow: 0px 0px 4px #aaa;
+    -moz-box-shadow: 0px 0px 4px #aaa; 
+    box-shadow: 0px 0px 4px #aaa;
+    -webkit-transition: background 0.3s linear;
+    -webkit-border-radius: 4px;
+
+    -moz-border-radius: 3px; 
+    border-radius: 3px;	
+}
+
+input.button:hover{
+    background: #e6e6e6;
+    color: #003366;
+    cursor:  pointer; 
+}
+
+input.button:active{
+    background: #e6e6e6;
+    color: #003366;
+    cursor:  pointer; 
+}
+
+#header {
+    background-color: #e2ebf2;
+    height: 100px;
+    padding-top: 0px;
+    border-bottom: #ddba3c solid 8px;
+}
+
+#header h1 {
+    margin: 0px 0px -20px 0;
+    padding: 0;
+    position: relative; 
+    font-size: 2.5em;
+    font-family: 'Open Sans Condensed', "Myriad Pro", Calibri, sans-serif ;
+    text-align: left !important;
+}
+#headerTitle {
+    padding-top: 15px;
+    padding-left: 10px;
+    width: auto;
+}
+.header_logo{
+    float: right;
+    height: auto;
+    margin-top: -5px;
+    padding-right: 15px;
+}
+
+#main {
+    width: 830px;
+    margin: 0 0 0 0;
+    font-size: 1.25em;
+    background-color: #fff;
+    padding: 0;
+}
+
+#journalDescription {
+    margin-bottom: 40px;
+    color: #616265;
+    font-size: 1.3em;
+    font-family: 'Open Sans Condensed', "Myriad Pro", Calibri, sans-serif;
+    margin-top: 50px;
+}
+
+#main h2 { 
+    position: relative;
+    padding-left:10px;
+    margin-bottom: 0px;
+    color: #3e5ba1;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', "Myriad Pro", Calibri, sans-serif;
+} 
+
+#content h3 {
+    line-height: 1.0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #3e5ba1;
+    font-family: 'Open Sans Condensed', "Myriad Pro", Calibri, sans-serif;
+}
+
+.homepage #content h3 {
+    line-height: 1.0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #3e5ba1;
+    font-family: "Open Sans Condensed","Myriad Pro", Calibri, sans-serif;
+}
+
+.homepage #content {
+  margin-top:-50px;
+}
+#navbar {
+    text-align: right;
+    margin-left: 50px;
+    position: relative;
+    background-color: #3e5ba1;
+    border: none;
+    padding: 0.05em 10px 0.05em 0;
+    font-family: "Open Sans Condensed","Myriad Pro", Calibri, sans-serif;
+}
+
+#navbar a{
+    font-size: 1.1em;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+#breadcrumb {
+    font-size: 0.8em;
+    padding: 7px 0 7px 10px;
+    position: relative;
+    border-bottom: 1px #e2ebf2 solid;    
+    z-index: 101;
+    /* visibility: hidden; */
+}
+
+#breadcrumb a.current {
+    color: #c83931;
+}
+.headTitle{
+    position:relative;
+}
+
+ul.menu li {
+    margin: 0;
+    padding: 0;
+    padding-right: 0.5em;
+    display: inline;
+}
+#announcements_li {
+    display: none;
+}
+#current {
+    display: none;
+}
+
+div {
+    text-align: justify;
+}
+
+#content {    
+    position: relative;
+    border: none;
+    padding: 0 10px 0px 10px;
+    font-size: 0.8em;  
+    overflow: auto;
+    margin-bottom: 0px;
+    font-family: "Open Sans","Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+.description{
+    /*padding-left: 5px;*/
+    padding-bottom: 3px;
+}
+
+.about{
+    color: #616265;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+.space{
+    padding-right: 40px;
+}
+
+#content h4 {
+    font-family: 'Open Sans Condensed', "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    line-height: 1.0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #616265;
+}
+
+.footer {
+    border-top: 3px #e2e1dd solid;
+    width: 1100px;
+    font-size: 0.7em;
+    float: left;
+    padding-bottom: 50px;
+    line-height: 1.2em;	
+}
+
+.footer_text{
+    padding-top: 5px;
+    padding-left: 25px;
+}
+
+.block {
+    min-width: 275px;
+}
+
+.journalBlock{
+    padding-bottom: 15px;
+}
+
+/*** SIDE BAR ***/
+
+#sidebar{
+    background-color: transparent;
+}
+#rightSidebar {
+    background-color: transparent;
+    font-size: 0.9em;
+    margin-top: 15px; 
+    padding: 0px;
+    width: 150px;
+    text-align: left;
+}
+
+div.separator {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+    padding: 0;
+    border-bottom: 2px dashed #e2e1dd;
+    font-size: 0.5em;
+    line-height: 25%;
+}
+
+table.announcements td.separator {
+    border-top: 3px solid #e2e1dd;
+    font-size: 0.1em;
+    line-height: 1%;
+}
+
+tr.background_line{
+    background-color: #e2e1dd;
+}
+
+ol.editorialTeam div.member{
+    padding-left:15px;
+}
+
+#sidebar div.custom {
+    padding: 0px;
+}
+
+input.lang_cz_en {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width:50px;
+    height:50px;
+    cursor: pointer;
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transform:scale(1.0); /*Webkit: Scale down image to 0.8x original size*/
+    -moz-transform:scale(1.0); /*Mozilla scale version*/
+    -o-transform:scale(1.0); /*Opera scale version*/
+    -webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+    -moz-transition-duration: 0.5s; /*Mozilla duration version*/
+    -o-transition-duration: 0.5s; /*Opera duration version*/
+}
+
+input.lang_cz_en:hover{
+    -webkit-transform:scale(1.1); /*Webkit: Scale up image to 1.2x original size*/
+    -moz-transform:scale(1.1); /*Mozilla scale version*/
+    -o-transform:scale(1.1); /*Opera scale version*/
+}
+
+input.lang_cz_en:active{
+    border:none;
+}
+
+input.en{
+    background: url(https://journals.muni.cz/images/vlajky/en_small.png) no-repeat left top;
+    margin-left: 15px;
+}
+
+input.cz{
+    background: url(https://journals.muni.cz/images/vlajky/cz_small.png) no-repeat left top;
+    float:left;
+    margin-right: 15px;
+}
+
+.tlacitko_doi {
+    height:50px;
+    padding: 2px 8px;
+    background: #fff;
+    color: #616265 !important;
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.1em;
+    margin-right: 15px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.tlacitko_doi:hover {
+    background: #e6e6e6;
+    border: none;
+    text-decoration: none;
+}
+
+h3.issueToc {
+    display: none;
+}
+
+#issueHome {
+    text-align: left;
+    width: 54%;
+}
+
+#announcementsHome{
+    padding-right: 17px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    background-color:#E9EFF5;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom:0px;
+    width: 91.5%;
+}
+
+.special_block{
+    float: right;
+    width: 370px;
+    margin-right:-10px;
+}
+
+.special_block #rightSidebar {
+    width: 370px;
+    margin-right: 0px;
+}
+
+#announcementsHome .description{
+    text-align: justify;
+}
+#announcementsHome h3 {
+    text-align: left;
+}
+#issueHome .tocArticle {
+    width: 100%;
+}
+
+#issueHome .tocArticleGalleysPages {
+    display: none;
+}
+
+table.announcements td.headseparator, td.endseparator{
+    display: none;
+}
+
+table.announcements td.nodata {
+    text-align: left;
+}
+
+table.announcements td{
+    padding: 0;
+}
+
+#content .menu a {
+    color: #3e5ba1;
+}
+
+#content .menu a:hover {
+    color: #c83931;
+}
+
+#content .menu li.current a{
+    color: #c83931;
+    text-decoration: underline;
+}
+
+ul.steplist li.current a{
+    color: #c83931;
+    text-decoration: underline;
+}
+
+ul.steplist{
+    margin-bottom: 15px;
+}
+
+.tocTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tocArticleTitle {
+    width: 100%;
+}
+
+.tocArticleAuthors {
+    width:70%;
+}
+
+.tocArticle {
+    margin-bottom: 25px;
+}
+
+.siteMap {
+    display: none;
+}
+
+#pageFooter {
+    color: #fff;
+    font-size: 0.95em;
+    text-align: center;
+    background-color: #e3bd2c;
+    margin: 30px -10px 0px -10px;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    letter-spacing: 0.05em;
+}
+
+/*.homepage .headTitle{
+    background: url("../../../images/cyberpsychology/middle.jpg") no-repeat left top; 
+    margin-top: 10px;
+    height: 60px;
+}*/
+
+#main .headTitle h2.homepageNadpis{
+    text-transform: uppercase;
+    font-size: 1.6em !important;
+    font-weight: normal;
+    font-family: 'Open Sans Condensed', "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+/*Biography */
+.biography h1{
+    background-color: #3e5ba1;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 3px 25px;
+    font-weight: normal;
+}
+
+.biography .separator {
+    display: none;
+}
+
+.biography #body {
+    margin: 0 auto;
+    width:700px
+}
+
+.biography #main {
+    width: 700px;
+    background-color: #fff;
+}
+
+.biography #container {
+    width: 700px !important;
+    min-width: 700px;
+}
+
+.biography #mainContent {
+    padding-top: 10px;
+}
+
+.htmlContents {
+    text-align: center;
+}
+
+.htmlContents div{
+    text-align: center;
+}
+
+.htmlContents .old p{
+    text-align: justify;
+}
+
+#content .htmlContents h4{
+    color: #000000;
+    margin: 20px 0;
+    
+}
+
+.htmlContents .autori{
+    color: #035d8a;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#main .htmlContents .old h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #035d8a;
+}
+
+#main .htmlContents h2 {
+    color: #000;
+    padding-left: 0px;
+    font-size: 1.2em;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#main .htmlContents h1 {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.htmlContents .nadpis {
+    margin-bottom: 10px;
+}
+
+.htmlContents .abstract {
+    padding: 0 25px;
+    text-align: justify;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#issues h3 {
+    color: #000;
+}
+
+#topBar {
+    padding-bottom: 0px;
+}
+
+.htmlContents .old td{
+    border-right: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+    text-align: left;
+    padding: 5px;
+}
+
+#main .htmlContents h5, h6 {
+    text-align: left;
+}
+
+#main .htmlContents h6 {
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Open Sans', "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+#main .htmlContents h5 {
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: 'Open Sans', "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+.htmlContents ul, ol, blockquote{
+    text-align: justify;
+    padding: 10px 70px;
+}
+
+.htmlContents .citation {
+    padding: 10px 70px;
+    text-align: left;
+    font-style: italic;
+}
+
+.htmlContents .figure {
+    margin: 20px 0px;
+}
+
+.htmlContents .appendix {
+    text-align: justify;
+}
+
+.submenu-about, .footerPanel {
+    display: none;
+}
+
+.teamBioBiography img {
+    float: left;
+    clear: both;
+    padding-right: 15px;
+}
+
+.teamBioBiography {
+    overflow : auto;
+    margin-bottom: 20px;
+}
+
+.editorialTeamBio ul{
+    padding-left: 0px;
+    list-style: none;
+}
+
+.editTeamEmailUrl {
+    padding-left: 13px;
+    padding-bottom: 5px;
+}
+
+.biography #main {
+    padding-right: 0px;
+}
+
+#headerPanel {
+    display:none;
+}
+
+ol.editorialTeam{
+    padding-right: 0px;
+}
+
+.tocAuthors {
+    font-size: 1.05em;
+    padding-left: 0px;
+}
+
+#displayMembership div{
+    text-align: left;
+}
+
+.htmlContents #articleCitace {
+    text-align: left;
+    background-color: #f0f5f9;
+    border-bottom: 1px solid #dbe5ed;
+    border-top: 1px solid #dbe5ed;
+    margin: 0 -10px;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+#articleCitace #citation{
+    text-align: left;
+}
+
+#searchForm td{
+    vertical-align: middle;
+}
+
+#footerPanel, #aboutPeople, #aboutPolicies, #aboutSubmissions, #aboutOther, .searchAbstract, .citation_doi, #bibliographicCitation, #cover, #supportingAgencies, #submissionPreparationChecklistSubmission, #linkDisableUserReg, #onlineSubmissions, .editTeamAffiliation{
+    display: none;
+}
+
+input.defaultButton {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 4px #aaa;
+    color: #616265;
+    font-size: 1.1em;
+    margin: 4px 0 10px;
+    min-width: 100px;
+    padding: 2px;
+}
+
+.tocDoi {
+    display: block;
+}
+
+.tocArticleDoi{
+    color: #787777;
+}
+
+.tocArticleNumber {
+    text-align: right;
+}
+input.textFieldToc {
+    min-width: 0px;
+}
+
+.tocSectionTitle {
+    margin-top: 30px !important;
+}
+
+table {
+  font-size: 0.92em;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+table colgroup {
+    border: 0 none;
+}
+
+.htmlContents table td {
+    padding: 0;
+}
+
+.htmlContents div.old div p {
+    text-align: left;
+}
+
+.htmlContents td{
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.htmlContents table {
+    border-left: 0 hidden;
+    border-right: 0 hidden;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-top: -1.5em;
+}
+
+.htmlContents .tab_note{
+    border-bottom: 0 hidden;
+}
+.htmlContents .tab_note>tbody:last-child tr{
+    border-top: 2px solid #000;
+}
+
+#articleBlok sup {
+    font-size: 0.7em;
+}
+
+p {
+	margin-bottom: 1.5em !important;
+}
+
+sup > font > font {
+	font-size: 10px !important;
+}
+
+table p {
+	margin: 0 !important;
+}
+
+img {
+  margin: 0 auto;
+}
+
+#submissionSupportingAgencies{
+    display: none;
+}
+
+#selectReviewForm {
+    border: 1px #c83931 solid; 
+    padding: 5px;
+    background-color: #e3bd2c;
+}
+
+#selectReviewForm:hover {
+    border: 1px #c83931 solid; 
+    padding: 5px;
+    background-color: #e6e6e6;
+    cursor:  pointer; 
+}
